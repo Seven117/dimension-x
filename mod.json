@@ -1,0 +1,78 @@
+{
+  "geode": "5.11.2",
+  "gd": {
+    "win": "2.2081"
+  },
+  "id": "seven.dimension-x",
+  "name": "DIMENSION X",
+  "version": "v0.4.0",
+  "developer": "Seven",
+  "description": "A portal-fluid and Evil Morty inspired Geometry Dash UI overhaul.",
+  "settings": {
+    "enable-pulse": {
+      "type": "bool",
+      "name": "Wordmark pulse",
+      "description": "Gently pulses the main menu wordmark and subtitle.",
+      "default": true
+    },
+    "footer-opacity": {
+      "type": "int",
+      "name": "Footer opacity",
+      "description": "Opacity of the dark footer band. Lower it if it covers the bottom menu buttons.",
+      "default": 185,
+      "min": 0,
+      "max": 255,
+      "control": {
+        "slider": true
+      }
+    },
+    "themed-pause": {
+      "type": "bool",
+      "name": "Themed pause menu",
+      "description": "Adds the DIMENSION X rails and wordmark to the pause menu.",
+      "default": true
+    },
+    "portal-background": {
+      "type": "bool",
+      "name": "Animated portal background",
+      "description": "Draws a slowly rotating green and cyan vortex behind the main menu.",
+      "default": true
+    },
+    "portal-opacity": {
+      "type": "int",
+      "name": "Portal brightness",
+      "description": "How strong the portal effect is (0-255). Lower it if buttons are hard to read.",
+      "default": 110,
+      "min": 0,
+      "max": 255,
+      "control": {
+        "slider": true
+      }
+    },
+    "show-characters": {
+      "type": "bool",
+      "name": "Show original characters",
+      "description": "Shows the Warden and Sprocket silhouettes on the main menu.",
+      "default": true
+    },
+    "custom-background": {
+      "type": "file",
+      "name": "Custom background image",
+      "description": "Optional image shown behind the main menu. Leave empty to use the default.",
+      "default": "",
+      "control": {
+        "dialog": "open",
+        "filters": [
+          {
+            "files": [
+              "*.png",
+              "*.jpg",
+              "*.jpeg"
+            ],
+            "description": "Images"
+          }
+        ]
+      }
+    }
+  }
+}
